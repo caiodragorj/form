@@ -26,4 +26,21 @@
 
 body {
   overflow: hidden;
+  font: var(--text);
+  color: var(--text-c2);
 }
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--text-c2);
+  text-decoration: none;
+}
+
+h1,h2 {
+  color: var(--text-c1);
+}
+
