@@ -31,6 +31,13 @@ input{
     border: 1px solid var(--stroke);
     color: var(--text);
   }
+  &:invalid{
+    border: 0.125rem solid var(--error);
+  }
+
+  &:valid + .alert-box{
+    display: none;
+  }
 }
 
 input[type="date"] {
@@ -75,3 +82,17 @@ textarea {
 .address .flex{
   gap: 1.25rem;
 }
+
+.input-wraper.error{
+  
+  & span {
+    color: var(--error);
+  }
+  justify-content: center;
+
+  .alert-box{
+    gap: 3px;
+    padding-top: 2px;
+  }
+
+  }

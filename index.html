@@ -95,7 +95,30 @@
                 <input type="text" value="SP" disabled name="estate" id="estate">
               </div>
             </div>
+          </fieldset>
 
+          <fieldset class="parent-info">
+            <legend>Informações do responsável</legend>
+            <div class="input-wraper">
+              <label for="parentname">Nome do responsável</label>
+              <input type="text" name="parentname" id="parentname" placeholder="Nome completo do responsável">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+
+            <div class="input-wraper">
+              <label for="tel">Telefone</label>
+              <input type="tel" value="(21)995543907" name="tel" id="tel" placeholder="zz completo do responsável">
+            </div>
+
+            <div class="input-wraper error">
+              <label for="email">Telefone</label>
+              <input type="email" value="caiodrago123" name="email" id="email" required placeholder="Nome completo do responsável">
+              <div class="alert-box flex">
+                <img src="assets/icons/alert-circle.svg" alt="alerta">
+                <span>insira um e-mail válido</span>
+              </div>
+              
+            </div>
           </fieldset>
         </form>
       </div>
