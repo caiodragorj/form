@@ -112,13 +112,37 @@
 
             <div class="input-wraper error">
               <label for="email">Telefone</label>
-              <input type="email" value="caiodrago123" name="email" id="email" required placeholder="Nome completo do responsável">
+              <input type="email" value="caiodrago123" name="email" id="email" required
+                placeholder="Nome completo do responsável">
               <div class="alert-box flex">
                 <img src="assets/icons/alert-circle.svg" alt="alerta">
                 <span>insira um e-mail válido</span>
               </div>
-              
+
             </div>
+          </fieldset>
+
+          <fieldset class="enroll-opt">
+            <legend>Opções de matrícula</legend>
+            <div class="input-wraper">
+              <label>Selecione o turno de estudo</label>
+
+              <div class="radio-wraper">
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="morning">
+                  <img src="assets/icons/sun-cloud-02.svg" alt="icone de sol com nuvem">
+                  <label for="morning">Manhã</label>
+                </div>
+
+                <div class="radio-inner">
+                  <div class="radio-image"></div>
+                  <input type="radio" name="study-shift" value="night">
+                  <img src="assets/icons/sun-02.svg" alt="icone de sol">
+                  <label for="night">Tarde</label>
+                </div>
+
+              </div>
           </fieldset>
         </form>
       </div>
