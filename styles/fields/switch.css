@@ -1,0 +1,49 @@
+.darkmode input[type=checkbox]{
+	height: 0;
+	width: 0;
+	visibility: hidden;
+}
+
+.darkmode label {
+	cursor: pointer;
+	text-indent: -9999px;
+	width: 64px;
+	height: 32px;
+	background: grey;
+	display: block;
+	border-radius: 24px;
+	position: relative;
+}
+
+.darkmode label:after {
+	content: '';
+	position: absolute;
+	top: 5px;
+	left: 5px;
+	width: 24px;
+	height: 24px;
+	background: #fff;
+	border-radius: 24px;
+	transition: 0.4s;
+}
+
+.darkmode input:checked + label {
+  background: linear-gradient(90deg, #59B2FF, #1D6FB6);
+}
+
+.darkmode input:checked + label:after {
+	left: calc(100% - 5px);
+	transform: translateX(-100%);
+}
+
+.darkmode label:active:after {
+	width: 24px;
+}
+
+// centering
+.darkmode {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+}
